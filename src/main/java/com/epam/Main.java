@@ -1,10 +1,9 @@
 package com.epam;
 import com.epam.connect.ConnectorDB;
-import com.epam.daos.Department;
-import com.epam.daos.Student;
 import com.epam.daos.StudentDAO;
 import com.epam.databaseinfo.DataBaseInfo;
-import com.epam.dbcreation.DbCreation;
+import com.epam.model.Department;
+import com.epam.model.Student;
 import com.epam.transactions.TransactionPerform;
 import com.epam.transformer.GenericTransformer;
 import org.apache.log4j.Logger;
@@ -35,7 +34,7 @@ public class Main {
             db.createDB();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }*/
         Student stud = new Student(5, "Володимир", "Богданов", "Данилович");
         StudentDAO studDao = new StudentDAO();
         studDao.insertStudent(stud);
@@ -52,7 +51,7 @@ public class Main {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        */
+
     }
 
 }

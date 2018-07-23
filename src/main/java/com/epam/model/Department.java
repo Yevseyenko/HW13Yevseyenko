@@ -1,4 +1,4 @@
-package com.epam.daos;
+package com.epam.model;
 
 import com.epam.annotations.Field;
 

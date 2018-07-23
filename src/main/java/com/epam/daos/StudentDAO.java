@@ -1,6 +1,7 @@
 package com.epam.daos;
 
 import com.epam.connect.ConnectorDB;
+import com.epam.model.Student;
 
 import java.sql.*;
 import java.util.HashSet;
